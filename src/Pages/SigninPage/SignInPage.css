@@ -12,3 +12,16 @@
     width: 600px;
     height: 500px;
 }
+
+.SignInPage .Container .top {
+    background-color: white;
+    border: none;
+    text-align: center;
+}
+
+.SignInPage .Container .body {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
