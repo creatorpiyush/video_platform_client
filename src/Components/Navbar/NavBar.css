@@ -12,6 +12,28 @@
     align-items: center;
 }
 
+.NavbarContainer .left #icon {
+    font-size: 2.25em;
+}
+
+.NavbarContainer .left #sidebarToggle {
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    border-radius: 40%;
+    margin: 10px;
+}
+
+.NavbarContainer .left #sidebarToggle:hover {
+    cursor: pointer;
+    background-color: rgba(82, 216, 216, 0.548);
+}
+
+.NavbarContainer .left #sidebarToggle:focus {
+    outline: none;
+    background-color: rgba(8, 145, 145, 0.548);
+}
+
 .NavbarContainer .center {
     flex: 33%;
     border: none;
@@ -25,13 +47,25 @@
     height: 35%;
     border-radius: 5px;
     font-size: 15px;
-    padding-left: 5px
+    padding-left: 5px;
+    background-color: rgb(42, 30, 49);
+    color: white;
+    font-weight: 700;
+}
+
+.NavbarContainer .center #searchBar:hover {
+    border-color: aqua;
 }
 
 .NavbarContainer .center #searchButton {
     width: 15%;
+    background-color: rgb(36, 23, 44);
     height: 35%;
     border-radius: 5px;
+}
+
+.NavbarContainer .center #searchButton:hover {
+    cursor: pointer;
 }
 
 .NavbarContainer .center #searchButton:focus {
@@ -40,25 +74,56 @@
 
 .NavbarContainer .right {
     flex: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 30px;
 }
 
-.NavbarContainer .left #icon {
-    font-size: 45px;
-}
-
-.NavbarContainer .left #sidebarToggle {
+.NavbarContainer .right #createVideo {
+    margin: 10px;
+    width: 60px;
     border: none;
     background-color: transparent;
-    width: 60px;
-    border-radius: 40%;
-    margin: 10px;
 }
 
-.NavbarContainer .left #sidebarToggle:hover {
+.NavbarContainer .right #createVideo:hover {
     cursor: pointer;
 }
 
-.NavbarContainer .left #sidebarToggle:focus {
+.NavbarContainer .right #createVideo:focus {
     outline: none;
-    background-color: lightgray;
+}
+
+.NavbarContainer .right #profilePic {
+    margin: 10px;
+    border: none;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.NavbarContainer .right #profilePic:focus {
+    outline: none;
+}
+
+.NavbarContainer .right #SignInButton {
+    width: 100px;
+    height: 50px;
+    font-weight: 700;
+    background-color: rgb(27, 25, 25);
+    border: 3px solid rgb(102, 230, 230);
+    border-radius: 10px;
+    outline: none;
+}
+
+.NavbarContainer .right #SignInButton:hover {
+    cursor: pointer;
+}
+
+.NavbarContainer .right #SignInButton:active {
+    border: 3px solid rgb(151, 120, 62);
+    background-color: rgb(177, 172, 172);
+    outline: none;
 }

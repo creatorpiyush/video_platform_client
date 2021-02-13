@@ -1,0 +1,14 @@
+.SignInPage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SignInPage .Container {
+    border: 2px solid gray;
+    box-shadow: -5px 5px darkgray;
+    width: 600px;
+    height: 500px;
+}
