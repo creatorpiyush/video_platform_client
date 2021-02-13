@@ -6,7 +6,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import AddBoxIcon from "@material-ui/icons/AddBox";
 
 export default function NavBar() {
-  const [loggedIn, SetLogIn] = useState(false);
+  const [loggedIn, SetLogIn] = useState<Boolean>(false);
 
   return (
     <>
@@ -32,7 +32,14 @@ export default function NavBar() {
           {loggedIn ? (
             <button id="profilePic"></button>
           ) : (
-            <button id="SignInButton">SignIn</button>
+            <button
+              id="SignInButton"
+              onClick={() => {
+                window.location.pathname = "signin";
+              }}
+            >
+              SignIn
+            </button>
           )}
         </div>
       </div>

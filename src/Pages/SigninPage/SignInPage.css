@@ -1,6 +1,7 @@
 .SignInPage {
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,8 +21,22 @@
 }
 
 .SignInPage .Container .body {
-    height: 200px;
+    height: 300px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+}
+
+.SignInPage .Container .body input {
+    margin: 100px;
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+    color: black;
+}
+
+.SignInPage .Container .body button span {
+    color: black !important;
 }
