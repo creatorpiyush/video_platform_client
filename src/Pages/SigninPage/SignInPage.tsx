@@ -3,9 +3,21 @@ import "./SignInPage.css";
 
 import GoogleLogin from "react-google-login";
 
+import Axios from "axios";
+
 export default function SignInPage() {
   const responseGoogle = (res: any) => {
     console.log(res);
+    const name = res.profileObj.name;
+    const email = res.profileObj.email;
+    const googleId = res.profileObj.googleId;
+    Axios.post("http://localhost:5555/signin", {
+      name: name,
+      email: email,
+      googleId: googleId,
+    }).then((response) => {
+      console.log("Success");
+    });
   };
   return (
     <div className="SignInPage">
